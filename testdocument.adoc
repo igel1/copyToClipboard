@@ -1,0 +1,41 @@
+[.doc]
+= Test Copy-to-Clipboard
+John Doe <John.Doe@googlemail.com>
+3.0, Sep 01, 2022: My Document
+:toc:
+:sectnums:
+:icons: font
+:source-highlighter: rouge
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+:docinfo: shared-footer
+:experimental:
+
+This Asciidoc document is for testing purposes:
+how do I include copy-to-clipboard icons (plus functionality)
+in my asciidoc html-output files?
+
+== Main Chapter
+
+Bla bla
+
+
+=== Sub-Chapter: Build a simple pipeline for Nginx deployment
+
+Here comes some code blocks with (hopefully) copy-to-clipboard icons
+attached to the top right corner of the code-blocks:
+
+[source,console]
+----
+$ echo "hello console"
+----
+
+[source,bash]
+----
+$ echo "hello bash"
+----
+
+[source,yaml]
+----
+test:
+   line: "hello yaml"
+----
