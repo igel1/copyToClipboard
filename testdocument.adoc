@@ -19,7 +19,7 @@ in my asciidoc html-output files?
 Bla bla
 
 
-=== Sub-Chapter: Build a simple pipeline for Nginx deployment
+=== Sub-Chapter: some code blocks
 
 Here comes some code blocks with (hopefully) copy-to-clipboard icons
 attached to the top right corner of the code-blocks:
@@ -39,3 +39,40 @@ $ echo "hello bash"
 test:
    line: "hello yaml"
 ----
+
+
+=== Problems
+
+Here are some screenshots of my IntelliJ IDEA development environment and of Firefox.
+
+==== Usecase 1: View the *.adoc in the preview-window.
+
+The copy-to-clipboard icon does not appear in the preview-window
+(provided by the asciidoctor-plugin) on the right hand side of
+my IntelliJ-IDEA.
+
+image:ProblemDescription001.png[]]
+
+==== Usecase 2: View the *.adoc-preview in an external browser
+
+The copy-to-clipboard icon does neither appear, when firefox is
+started from  the IntelliJ-IDEA build-in external browser
+button-bar.
+
+(Is this, because the external browser  accesses the IntelliJ-internal
+http-server  via http instead of https? )
+
+image::Firefox_started_from_IntelliJ_external_browser_bar.png[]
+
+==== Usecase 3: Convert *.adoc first, then open *.html on filesystem
+
+But copy-to-clipboard works, if I convert the *.adoc first and then
+open it in a browser (which happens in one step, if I press the
+"HTML" Button in the menu bar of my IntelliJ's asciidoc-plugin-Editor)
+
+I guess the reason is, that clipboard-functionality is (for
+security reasons) only
+available when the resulting HTML-output document is served
+via https or opened directly on a local filesystem, right?
+
+image::Firefox_open_HTML_on_filesystem.png[]
